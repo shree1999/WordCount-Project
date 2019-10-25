@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Counted Words</title>
+  </head>
+  <body>
+      <h1>COUNT</h1>
+      <hr>
+      <div>
+        <h3>The Entered text is:</h3>
+        {{ string }}
+      </div>
+
+      <div class="">
+        <h3>There are total of {{ total }} items in your text</h3>
+
+        <h4>There frequency is given by</h4>
+        <p>
+          {% for word, count in frequency %}
+
+          {{ word }} <span>-</span> {{ count }}
+          <br>
+          {% endfor %}
+
+        </p>
+      </div>
+
+
+  </body>
+</html>
